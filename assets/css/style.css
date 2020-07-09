@@ -1,0 +1,75 @@
+.food-shala{
+    font: 700 2em/1 "Oswald", sans-serif;
+    font-size: 5vw;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+    background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+/* Animate Background Image */
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+
+}
+
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.banner-image{ 
+    text-align: center; 
+    color: #f8f8f8; 
+    background: url(../images/bg-food-image.jpg) no-repeat;
+    background-position: center center; 
+    background-size: cover;
+    background-color:#464646;
+    background-attachment: fixed;
+    height: 100%;
+    display: block;
+}
+.inner-banner-image{
+    padding-top: 5%; 
+    width:80%; 
+    margin:auto;
+}
+.banner_content{
+    position: relative; 
+    padding-top: 6%; 
+    padding-bottom: 6%; 
+    overflow:hidden; 
+    margin-bottom: 12%; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    max-width: 660px;
+}
+.slogan{
+    font-size: 3vw;
+}
+.btn-order{
+    color: #fff; 
+    background-color: #c9302c; 
+    border-color: #ac2925; 
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125); 
+    padding: 10px 16px; 
+    font-size: 18px; 
+    border-radius: 6px;
+}
+.signin{
+    background-color:#464646;
+}
